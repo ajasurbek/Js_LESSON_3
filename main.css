@@ -1,0 +1,121 @@
+:root {
+  scroll-behavior: smooth;
+}
+.body {
+  margin: 0;
+  padding: 0;
+  font-family: "Arial", sans-serif;
+  box-sizing: border-box;
+  background-color: rgb(250, 71, 71);
+}
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  margin-top: 150px;
+  padding: 0 50px;
+}
+.visually-hidden {
+  position: absolute !important;
+  clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
+  clip: rect(1px, 1px, 1px, 1px);
+  padding:0 !important;
+  border:0 !important;
+  height: 1px !important;
+  width: 1px !important;
+  overflow: hidden;
+}
+.main-button {
+  display: inline-block;
+  line-height: 24px;
+  font-size: 15px;
+  padding: 20px 140px;
+  font-weight: 700;
+  color: rgb(210, 219, 219);
+  background-color: #34dbe7;
+  border-radius: 5px;
+  cursor: pointer;
+  border: none;
+  white-space: nowrap;
+  text-decoration: none;
+}
+/* ===========  */
+.heading {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin-top: 40px;
+}
+.form-container {
+
+  padding-top: 60px;
+  padding-bottom: 60px;
+  color: #ffffff;
+  background-color: rgb(21, 30, 43);
+}
+.js-form {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  width: 1000px;
+}
+.form {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 1000px;
+  padding: 40px;
+  border-radius: 8px;
+  background-color: #ffffffcb;
+}
+.form-input {
+  width: 100%;
+  padding: 25px;
+  margin-bottom: 20px;
+  color: #191919;
+  border: none;
+  border-radius: 5px;
+  background-color: #f3f3f3;
+}
+.form-select {
+  width: 100%;
+  padding: 18px;
+  margin-bottom: 20px;
+  background-color: #f3f3f3;
+  border: none;
+  border-radius: 6px;
+}
+.form-button {
+  display: block;
+  margin: 0 auto;
+  margin-top: 20px;
+}
+.input-wrapper {
+  margin-right: 30px;
+}
+.form__summa {
+  padding: 10px 20px;
+}
+.currency-select {
+  padding: 10px;
+}
+.results {
+  margin-right: 20px;
+  padding: 10px;
+}
+/*
+==== */
+
+.form-heading {
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+  color: rgb(0, 204, 255);
+}

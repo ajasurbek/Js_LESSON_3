@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JS LESSON-3</title>
+  <link rel="stylesheet" href="main.css">
+</head>
+<body class="body">
+  <h1 class="heading">
+    Markaziy bankdan toza uxlatilgan bugungi kurs
+  </h1>
+  <div class="container form-container">
+    <div class="js-form">
+      <form class="form" action="https://echo.htmlacademy.ru" method="POST">
+        <div class="input-wrapper right">
+          <label class="visually-hidden" for="name">Summa</label>
+          <input class="form__summa form-control" id="form__summa" type="number" placeholder="SUMMA" required>
+        </div>
+        <div class="input-wrapper right">
+          <label class="visually-hidden" for="form-select">currency rates</label>
+          <select class="currency-select form-control" id="currency-select" name="currency" required>
+            <option value="110.00">RUB</option>
+            <option value="11700.00">EUR</option>
+            <option value="10350.00">USD</option>
+            <option value="85.00">JPY</option>
+          </select>
+          <label class="visually-hidden" for="exchanges"></label>
+          <input class="result_uzb results" id="result_uzb" name="result_uzb" type="text">
+          <h3 class="form-heading">so'm</h3>
+        </div>
+      </form>
+    </div>
+    <button class="main-button form-button" type="submit">Result</button>
+  </div>
+
+  <script>
+    var Result_Uzb = document.querySelector('.result_uzb');
+    var formBtn = document.querySelector('.form-button');
+
+    formBtn.addEventListener('click', function(event) {
+      var amount = document.querySelector('.form__summa').value;
+      var currency = parseFloat(document.querySelector('.currency-select').value, 10);
+
+      event.preventDefault();
+      var Result_Uzb_result = Math.round(amount * currency);
+      Result_Uzb.value = Result_Uzb_result;
+    });
+  </script>
+</body>
+</html>
