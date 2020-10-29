@@ -43,7 +43,7 @@
       var currency = parseFloat(document.querySelector('.currency-select').value, 10);
 
       event.preventDefault();
-      var Result_Uzb_result = Math.round(amount * currency);
+      var Result_Uzb_result = parseFloat(amount * currency);
       Result_Uzb.value = Result_Uzb_result;
     });
   </script>
