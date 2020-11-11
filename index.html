@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>JS LESSON-3</title>
+  <title>JS lesson-3</title>
   <link rel="stylesheet" href="main.css">
 </head>
 <body class="body">
@@ -19,33 +19,24 @@
         </div>
         <div class="input-wrapper right">
           <label class="visually-hidden" for="form-select">currency rates</label>
-          <select class="currency-select form-control" id="currency-select" name="currency" required>
-            <option value="110.00">RUB</option>
-            <option value="11700.00">EUR</option>
-            <option value="10350.00">USD</option>
-            <option value="85.00">JPY</option>
+          <select class="currency-select form-control" name="currency" required>
+            <option value="110.88">RUB</option>
+            <option value="11700.77">EUR</option>
+            <option value="10350.99">USD</option>
+            <option value="85.55">JPY</option>
           </select>
-          <label class="visually-hidden" for="exchanges"></label>
+          <label class="visually-hidden"></label>
           <input class="result_uzb results" id="result_uzb" name="result_uzb" type="text">
-          <h3 class="form-heading">SO'M</h3>
+          <p class="form-heading h3">SO'M</p>
+          <button class="main-button form-button" type="submit">Result</button>
         </div>
       </form>
     </div>
-    <button class="main-button form-button" type="submit">Result</button>
+
   </div>
 
-  <script>
-    var Result_Uzb = document.querySelector('.result_uzb');
-    var formBtn = document.querySelector('.form-button');
+  <script src="main.js">
 
-    formBtn.addEventListener('click', function(event) {
-      var amount = document.querySelector('.form__summa').value;
-      var currency = parseFloat(document.querySelector('.currency-select').value, 10);
-
-      event.preventDefault();
-      var Result_Uzb_result = parseFloat(amount * currency);
-      Result_Uzb.value = Result_Uzb_result;
-    });
   </script>
 </body>
 </html>
